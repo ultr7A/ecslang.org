@@ -1,0 +1,19 @@
+html,
+body {
+    font-size: 1.2em;
+    font-family: "sans-serif";
+    width: 100vh;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: black;
+    background-image: linear-gradient(#090909,#101010, #272727);
+    color: white;
+}
+input {
+    background: black;
+    color: white;
+    font-size: 2em;
+    padding-left: 0.5em;
+}
+

@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+  color: white;
+  height: 100vh;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 30vmin;
+}
+
+.App-header {
+  min-height: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 1vmin);
+  color: white;
+}
+
+.App-link {
+  color: #00f100
+}
+
+input#ecs-input {
+  background: #262626;
+  color: white;
+  border: 0;
+  font-size: 12pt;
+  width: calc(50vw - 98px);
+  min-width: 240px;
+  outline-width: 0;
+}
+input#ecs-input:focus {
+  outline-width: 0;
+}
+input.button {
+
+  background: #272727;
+  border: 0;
+  font-size: 22pt;
+  cursor: pointer;
+  border-right: 0.12em solid #333333; 
+}
+input#ecs-button {
+  color: yellow;
+  outline-color: yellow;
+  border-bottom-left-radius: 5px;
+}
+
+input#clear-button {
+  color: rgb(185, 185, 0);
+  outline-color: white;
+}
+
+input#read-code-button {
+  color: rgb(126, 126, 0);
+  font-size: 18.5pt;
+}
+
+
+input#make-code-button {
+  color: rgb(126, 126, 0);
+  font-size: 18.5pt;
+}
+
+.input-container {
+  display: inline-block;
+  margin: auto;
+  width: 50vw;
+  text-align: left;
+  transition: height 0.2s ease, max-height 0.15s ease;
+}
+#ecs-output {
+  font-family: monospace;
+}
+#ecs-output-container {
+  display: inline-block;
+  width: calc(50vw - 0.09em);
+  margin: auto;
+  vertical-align: top;
+  font-size: 12pt;
+  text-align: left;
+  max-height: 49vh;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+#ecs-output-container > div {
+  text-align: left;
+}
+
+#ecs-output-container > div > span {
+  white-space: pre;
+}
+
+#qr-output img {
+  background: white;
+}
+
+
+#ecs-output-container div.boolean { color: rgb(71, 71, 255); }
+
+#ecs-output-container div.error { color: red; }
+
+#ecs-output-container div.number { color: rgb(255, 232, 29); }
+
+#ecs-output-container div.float { color: #ff8800; }
+
+#ecs-output-container div.string { color: rgb(95, 255, 47); }
+
+
+.lt-sign {
+  user-select: none;
+  display: inline-block;
+  font-size: 30pt;
+}
+
+.gt-sign { 
+  user-select: none;
+  display: inline-block;
+  font-size: 30pt;
+}
+
+#toolbar {
+  background: #212121;
+  box-shadow: rgba(0,0,0,0.5) 0px 0px 11px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.CodeMirror {
+  font-size: 12pt;
+  height: 100% !important;
+  max-height: 97vh;
+  animation: change-background 0.5s linear 1;
+}
+
+.CodeMirror-scroll {
+  max-height: 90vh;
+}
